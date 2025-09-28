@@ -39,13 +39,13 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="section-padding bg-white dark:bg-gray-900">
+    <section id="about" className="section-padding bg-gray-900">
       <div className="container-custom">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Why Choose Bnb Trades?
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             We are committed to providing you with the best investment research and analysis 
             to help you make informed financial decisions.
           </p>
@@ -58,13 +58,13 @@ const About = () => {
               className="card p-6 text-center group hover:shadow-2xl transition-all duration-500 animate-slide-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="text-blue-600 dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-xl font-semibold text-white mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-gray-300">
                 {feature.description}
               </p>
             </div>
@@ -74,10 +74,10 @@ const About = () => {
         {/* Additional Info */}
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-in-left">
-            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-3xl font-bold text-white mb-6">
               Our Mission
             </h3>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-lg text-gray-300 mb-6">
               To democratize access to professional-grade investment research and analysis, 
               empowering individuals to make informed financial decisions and achieve their 
               investment goals.
@@ -85,15 +85,15 @@ const About = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                <span className="text-gray-700 dark:text-gray-300">SEBI Registered Research Analyst</span>
+                <span className="text-gray-300">SEBI Registered Research Analyst</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                <span className="text-gray-700 dark:text-gray-300">Transparent and Ethical Practices</span>
+                <span className="text-gray-300">Transparent and Ethical Practices</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                <span className="text-gray-700 dark:text-gray-300">Client-First Approach</span>
+                <span className="text-gray-300">Client-First Approach</span>
               </div>
             </div>
           </div>

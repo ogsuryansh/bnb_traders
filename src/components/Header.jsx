@@ -17,7 +17,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-40 transition-all duration-300">
+    <header className="bg-gray-900 shadow-lg sticky top-0 z-40">
       {/* Top Banner */}
       <div className="bg-red-600 text-white py-2 px-4 text-center text-sm font-medium animate-pulse-slow">
         <p>⚠️ ONLINE FRAUD PUBLIC NOTICE →</p>
@@ -38,7 +38,7 @@ const Header = () => {
               alt="Bnb Trades Logo" 
               className="h-12 w-auto object-contain"
             />
-            <h1 className="text-2xl font-bold text-gray-800 dark:text-white">
+            <h1 className="text-2xl font-bold text-white">
               Bnb Trades
             </h1>
           </div>
@@ -49,7 +49,7 @@ const Header = () => {
               <a
                 key={index}
                 href={item.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-300 relative group"
+                className="text-gray-300 hover:text-blue-400 font-medium transition-colors duration-300 relative group"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -60,7 +60,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300"
+            className="md:hidden p-2 rounded-lg text-gray-300 hover:bg-gray-800 transition-colors duration-300"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
@@ -77,12 +77,12 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-          <nav className="py-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+          <nav className="py-4 space-y-2 border-t border-gray-700">
             {menuItems.map((item, index) => (
               <a
                 key={index}
                 href={item.href}
-                className="block py-2 px-4 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-all duration-300"
+                className="block py-2 px-4 text-gray-300 hover:text-blue-400 hover:bg-gray-800 rounded-lg transition-all duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

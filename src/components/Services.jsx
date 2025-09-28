@@ -33,13 +33,13 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="section-padding bg-gray-50 dark:bg-gray-800">
+    <section id="services" className="section-padding bg-gray-800">
       <div className="container-custom">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Comprehensive financial services designed to help you achieve your investment goals 
             with confidence and clarity.
           </p>
@@ -52,15 +52,15 @@ const Services = () => {
               className="card p-8 group hover:shadow-2xl transition-all duration-500 animate-slide-up flex flex-col"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className="text-blue-600 dark:text-blue-400 mb-6">
+                  <div className="text-blue-400 mb-6">
                 {service.icon}
               </div>
               
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  <h3 className="text-2xl font-bold text-white mb-4">
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 dark:text-gray-300 mb-6 flex-grow">
+                  <p className="text-gray-300 mb-6 flex-grow">
                 {service.description}
               </p>
 
@@ -68,7 +68,7 @@ const Services = () => {
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                    <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                        <span className="text-gray-300">{feature}</span>
                   </li>
                 ))}
               </ul>

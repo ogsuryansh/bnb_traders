@@ -58,13 +58,13 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="section-padding bg-white dark:bg-gray-900">
+    <section id="contact" className="section-padding bg-gray-900">
       <div className="container-custom">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Have questions about our services? We'd love to hear from you. 
             Send us a message and we'll respond as soon as possible.
           </p>
@@ -73,24 +73,24 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="animate-slide-in-left">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+            <h3 className="text-2xl font-bold text-white mb-8">
               Contact Information
             </h3>
             
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                  <div className="text-blue-600 dark:text-blue-400 mt-1">
+                  <div className="text-blue-400 mt-1">
                     {info.icon}
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    <h4 className="text-lg font-semibold text-white">
                       {info.title}
                     </h4>
-                    <p className="text-gray-700 dark:text-gray-300 font-medium">
+                    <p className="text-gray-300 font-medium">
                       {info.details}
                     </p>
-                    <p className="text-gray-500 dark:text-gray-400 text-sm">
+                    <p className="text-gray-400 text-sm">
                       {info.description}
                     </p>
                   </div>
@@ -99,11 +99,11 @@ const Contact = () => {
             </div>
 
             {/* Additional Info */}
-            <div className="mt-8 p-6 bg-gray-50 dark:bg-gray-800 rounded-xl">
-              <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="mt-8 p-6 bg-gray-800 rounded-xl">
+              <h4 className="text-lg font-semibold text-white mb-3">
                 Why Choose Us?
               </h4>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+              <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                   <span>SEBI Registered Research Analyst</span>
@@ -129,7 +129,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -139,13 +139,13 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-800 text-white transition-colors duration-300"
                     placeholder="Your full name"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -155,14 +155,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-300"
+                    className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-800 text-white transition-colors duration-300"
                     placeholder="your@email.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
                   Phone Number
                 </label>
                 <input
@@ -177,7 +177,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                   Message *
                 </label>
                 <textarea
@@ -187,7 +187,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 border border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-800 text-white transition-colors duration-300 resize-none"
                   placeholder="Tell us how we can help you..."
                 />
               </div>
