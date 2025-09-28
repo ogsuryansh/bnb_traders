@@ -60,7 +60,7 @@ const Footer = () => {
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="/src/assets/mail_logo.png" 
+                  src="/mail_logo.png" 
                   alt="Bnb Trades Logo" 
                   className="h-10 w-auto object-contain"
                 />

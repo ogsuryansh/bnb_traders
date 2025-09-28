@@ -34,7 +34,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-4 animate-slide-in-left">
             <img 
-              src="/src/assets/mail_logo.png" 
+              src="/mail_logo.png" 
               alt="Bnb Trades Logo" 
               className="h-12 w-auto object-contain"
             />
